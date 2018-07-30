@@ -1,0 +1,27 @@
+{
+  "name": "repo-kano",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "LINE_CHANNEL_ACCESSTOKEN": {
+      "required": true
+    },
+    "LINE_CHANNEL_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
