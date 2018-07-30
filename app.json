@@ -1,27 +1,15 @@
 {
-  "name": "repo-kano",
-  "description": "",
-  "scripts": {
-  },
+  "name": "linebot-php-heroku-framework",
+  "description": "a tiny PHP framework to deploy your linebot on heroku",
+  "repository": "https://github.com/CHY0919/linebot-php-heroku-framework.git",
+  "keywords": ["linebot-php", "LINE"],
   "env": {
-    "LINE_CHANNEL_ACCESSTOKEN": {
-      "required": true
-    },
     "LINE_CHANNEL_SECRET": {
-      "required": true
+      "description": "LINE Channel Secret"
+    },
+    "LINE_CHANNEL_ACCESSTOKEN": {
+      "description": "LINE Channel Accesstoken(Should issued first)"
     }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1
-    }
-  },
-  "addons": [
-
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/php"
-    }
-  ]
+    
+  }
 }
